@@ -1,0 +1,33 @@
+$color:#e8e6e6;
+ body{
+ background-color:$color;
+ }
+/*nesting*/
+
+ li{
+ a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  }
+}
+
+ 
+/*inheritance*/
+ %message {
+      border-radius:20%;
+  }
+
+  .right {
+      @extend %message;
+      margin-left: 10px;
+      float: right;
+  }
+  .left{
+  @extend %message;
+  margin-right: 10px;
+  float: left;
+  }
